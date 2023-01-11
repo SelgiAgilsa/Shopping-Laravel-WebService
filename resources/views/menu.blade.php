@@ -1,3 +1,9 @@
+@extends('layout/home')
+
+@section('title', 'Tampilan')
+
+@section('container')
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +25,8 @@
 .box {
   width: 200px;
   margin: 0 10px;
-  background: #008F86;
+  background: #40e0d0;
+  border-radius: 50px;
 }
 .box img {
   display: block;
@@ -64,11 +71,11 @@
 
 
 <div class="mt-5">
-        <div class="container">
+        <div class="container ">
             <div class="row">
                 <div class="col">
-                    <center><h4 class="font-weight-bold">Category
-                    </h4></center>
+                    <center><h3 class="font-weight-bold w3-border-bottom w3-border-info-grey">Category
+                    </h3></center>
                 </div>
             </div>
             <!-- Product Gallery -->
@@ -93,7 +100,7 @@
 
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="produk">
-    <h3 class="w3-border-bottom w3-border-info-grey w3-padding-16">Products</h3>
+    <h3 class="font-weight-bold w3-border-bottom w3-border-info-grey w3-center">Products</h3>
   </div>
 
   @foreach ($adproducts as $adnproduct)
@@ -115,3 +122,4 @@
   </div>
 </body>
 </html>
+@endsection

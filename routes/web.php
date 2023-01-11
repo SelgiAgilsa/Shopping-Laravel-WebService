@@ -14,6 +14,7 @@ use App\Http\Controllers\AdwishlistsController;
 use App\Http\Controllers\AdadminsController;
 use App\Http\Controllers\AdusersController;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\LoginController;
 //USER
 
 
@@ -118,3 +119,6 @@ Route::patch('/users/{adusers}', [AdusersController::class, 'update']);
 
 Route::get('/menu', [UsersController::class, 'index']);
 Route::get('/product1/{adproducts}', [UsersController::class, 'show']);
+
+Route::get('/login/create', [LoginController::class, 'create']);
+Route::post('/dashboard', [LoginController::class, 'store']);
