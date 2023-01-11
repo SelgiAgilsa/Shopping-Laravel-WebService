@@ -1,6 +1,6 @@
 @extends('layout/home')
 
-@section('title', 'Tampilan')
+@section('title', 'Dashboard')
 
 @section('container')
 
